@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        " # ",
+        "#C#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:coal_block"
+        },
+        "C": {
+            "item": "minecraft:cactus"
+        }
+    },
+    "result": {
+        "item": "minecraft:music_disc_ward",
+        "count": 1
+    }
+}

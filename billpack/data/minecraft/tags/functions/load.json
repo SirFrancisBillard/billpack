@@ -1,0 +1,7 @@
+{
+	"replace":"false",
+	"values": [
+		"billpack:initialize",
+		"billpack:paperbark/setup"
+	]
+}

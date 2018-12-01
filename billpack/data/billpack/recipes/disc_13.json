@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        " # ",
+        "#g#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:coal_block"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:music_disc_13",
+        "count": 1
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:rotten_flesh",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.06,
+                    "looting_multiplier": 0.04
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_ingot",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:carrot",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:potato",
+                    "weight": 10
+                },
+				{
+				  "type": "item",
+				  "name": "minecraft:written_book",
+				  "weight": 10,
+				  "functions": [
+					{
+					  "function": "set_nbt",
+					  "tag": "{pages:[\"{\\\"text\\\":\\\"First of all ChristianBoy22, I've been an atheist since birth.\\\"}\"],title:\"The Holy Bible\",author:God,display:{Lore:[\"A signed copy!\"]}}"
+					}
+				  ]
+				},
+                {
+                    "type": "item",
+                    "name": "minecraft:leather_helmet",
+                    "weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Red Hat",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{display:{color:11546150,Lore:[\"It smells funny...\"]}}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Welfare Shipment",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"open to get yo thangs n shiet.\",\"doodechek come in todaY?\"]},BlockEntityTag:{Items:[{Slot:11,id:cooked_chicken,Count:8},{Slot:13,id:melon_slice,Count:16},{Slot:15,id:potion,Count:1,tag:{Potion:healing,display:{Name:\"{\\\"text\\\":\\\"Kool-Aid\\\",\\\"italic\\\":false}\"}}}]}}"
+						}
+					]
+                }
+            ]
+        }
+    ]
+}

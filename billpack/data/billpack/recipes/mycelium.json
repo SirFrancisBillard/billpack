@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:brown_mushroom"
+        },
+        {
+            "item": "minecraft:red_mushroom"
+        },
+        {
+            "item": "minecraft:dirt"
+        }
+    ],
+    "result": {
+        "item": "minecraft:mycelium",
+        "count": 1
+    }
+}

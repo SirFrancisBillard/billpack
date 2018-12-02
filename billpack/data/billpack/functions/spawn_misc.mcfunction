@@ -23,10 +23,12 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:slime_ball",tag:{display:{Lore:
 # rare chance to spawn creepi bois in the nether
 # even rarer chance to spawn herobrine shrines in nether
 # traveling merchant can be spawned in the nether
+# also killer bunnies (for some reason?)
 execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=0..50,tag=!legit_pigman] run function billpack:summon_nethercreeper
 execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=51..54,tag=!legit_pigman] run function billpack:summon_heroshrine
 execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=55..80,tag=!legit_pigman] run function billpack:summon_merchant
-execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=81..,tag=!legit_pigman] run data merge entity @s {Tags:["legit_pigman"]}
+execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=81..90,tag=!legit_pigman] run function billpack:summon_killerbunny
+execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=91..,tag=!legit_pigman] run data merge entity @s {Tags:["legit_pigman"]}
 
 # ======================================================
 # ========== SAME TYPE MOB CONVERSION WARNING ==========
@@ -41,3 +43,11 @@ execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=43..,tag=!legit
 # spawn frost queen, legendary mini-boss
 execute as @e[type=minecraft:stray,nbt={Dimension:0},y_rotation=0..26,tag=!legit_stray] run function billpack:summon_frostqueen
 execute as @e[type=minecraft:stray,nbt={Dimension:0},y_rotation=27..,tag=!legit_stray] run data merge entity @s {Tags:["legit_stray"]}
+
+# ============================================================
+# ========== SPECIAL / ABNORMAL SPAWNING MECHANISMS ==========
+# ============================================================
+
+# spawn cultists if a totem falls in lava (kinda iffy)
+execute at @e[type=item,nbt={Item:{id:"minecraft:totem_of_undying"}}] if block ~ ~-0.2 ~ lava run function billpack:summon_cultists
+execute at @e[type=item,nbt={Item:{id:"minecraft:totem_of_undying"}}] if block ~ ~-0.2 ~ lava run kill @s

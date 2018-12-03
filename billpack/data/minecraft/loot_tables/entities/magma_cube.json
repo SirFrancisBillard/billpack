@@ -10,10 +10,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": {
-                                "min": -2,
-                                "max": 1
-                            }
+                            "count": 1
                         },
                         {
                             "function": "looting_enchant",
@@ -34,7 +31,7 @@
                 {
                     "condition": "random_chance_with_looting",
                     "chance": 0.2,
-                    "looting_multiplier": 0.1
+                    "looting_multiplier": 0.0
                 }
             ],
             "rolls": 1,
@@ -53,7 +50,25 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Like a Gooey Glove, but hotter.\"]},StoredEnchantments:[{id:sharpness,lvl:5},{id:fire_aspect,lvl:2},{id:looting,lvl:3}]}"
+							"tag": "{display:{Lore:[\"Like a Gooey Glove, but hotter.\"]},Enchantments:[{id:sharpness,lvl:5},{id:fire_aspect,lvl:2},{id:looting,lvl:3}]}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:iron_pickaxe",
+                    "weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Magma Infused Pickaxe",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"Automatically smelts mined ore.\"]},Enchantments:[{lvl:2s,id:fire_aspect}]}"
 						}
 					]
                 }

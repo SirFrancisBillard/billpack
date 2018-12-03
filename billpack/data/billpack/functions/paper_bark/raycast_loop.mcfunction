@@ -1,0 +1,2 @@
+execute as @s at @s unless block ~ ~ ~ #billpack:paperbark_stripped_logs run teleport @s ^ ^ ^0.5
+execute as @s at @s unless block ~ ~ ~ #billpack:paperbark_stripped_logs run function billpack:paper_bark/raycast_loop

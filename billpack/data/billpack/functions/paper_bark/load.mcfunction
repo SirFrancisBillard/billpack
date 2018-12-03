@@ -1,0 +1,5 @@
+scoreboard objectives add paper_bark.wood minecraft.used:minecraft.wooden_axe "PaperBark: Wooden Axe"
+scoreboard objectives add paper_bark.stone minecraft.used:minecraft.stone_axe "PaperBark: Stone Axe"
+scoreboard objectives add paper_bark.iron minecraft.used:minecraft.iron_axe "PaperBark: Iron Axe"
+scoreboard objectives add paper_bark.gold minecraft.used:minecraft.golden_axe "PaperBark: Gold Axe"
+scoreboard objectives add paper_bark.dia minecraft.used:minecraft.diamond_axe "PaperBark: Diamond Axe"

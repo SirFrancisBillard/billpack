@@ -19,4 +19,4 @@ execute at @s run setblock ~-1 ~ ~-1 minecraft:gold_block
 execute at @s if block ~ ~-5 ~ netherrack if block ~ ~-6 ~ netherrack run setblock ~ ~-5 ~ chest{CustomName:"\"You are a terrible person.\"",LootTable:"minecraft:chests/end_city_treasure"} replace
 
 # why not just kill it?
-teleport @s ~ 0 ~
+teleport @s ~ -200 ~

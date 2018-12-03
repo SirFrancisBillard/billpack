@@ -5,21 +5,21 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:slime_ball",
+                    "name": "minecraft:porkchop",
                     "weight": 1,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
-                                "max": 2
+                                "min": 64,
+                                "max": 256
                             }
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
                                 "min": 0,
-                                "max": 1
+                                "max": 50
                             }
                         }
                     ]
@@ -27,35 +27,25 @@
             ]
         },
 		{
-            "conditions": [
-                {
-                    "condition": "killed_by_player"
-                },
-                {
-                    "condition": "random_chance_with_looting",
-                    "chance": 0.1,
-                    "looting_multiplier": 0.08
-                }
-            ],
             "rolls": 1,
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:cactus_green",
-                    "weight": 10,
-					"functions": [
-						{
+                    "name": "minecraft:paper",
+                    "weight": 1,
+                    "functions": [
+                        {
 							"function": "set_name",
 							"name": {
-								"text": "Gooey Glove",
+								"text": "Sincere Apology",
 								"italic": false
 							}
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Not overpowered...\"]},Enchantments:[{id:sharpness,lvl:5},{id:knockback,lvl:2},{id:looting,lvl:3}]}"
+							"tag": "{display:{Lore:[\"Sorry about all the pork.\"]}}"
 						}
-					]
+                    ]
                 }
             ]
         }

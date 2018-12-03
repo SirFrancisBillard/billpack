@@ -5,13 +5,13 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:ghast_tear",
+                    "name": "minecraft:coal",
                     "weight": 1,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
+                                "min": -1,
                                 "max": 1
                             }
                         },
@@ -31,7 +31,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:gunpowder",
+                    "name": "minecraft:bone",
                     "weight": 1,
                     "functions": [
                         {
@@ -65,21 +65,41 @@
             ],
             "rolls": 1,
             "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:wither_skeleton_skull",
+                    "weight": 1
+                }
+			]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.025,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
 				{
                     "type": "item",
-                    "name": "minecraft:ghast_tear",
+                    "name": "minecraft:charcoal",
                     "weight": 1,
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
-								"text": "Ghast Pendant",
+								"text": "Wither Skeleton Pendant",
 								"italic": false
 							}
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Grants levitation while held.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{display:{Lore:[\"Grants immunity to soul sand while held.\"]},Enchantments:[{id:-1}]}"
 						}
 					]
                 }

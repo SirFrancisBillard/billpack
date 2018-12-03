@@ -1,43 +1,17 @@
 {
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 5,
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:ghast_tear",
+                    "name": "minecraft:iron_ore",
                     "weight": 1,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        },
-                        {
-                            "function": "looting_enchant",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:gunpowder",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 0,
+                                "min": 1,
                                 "max": 2
                             }
                         },
@@ -49,39 +23,27 @@
                             }
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "conditions": [
-                {
-                    "condition": "killed_by_player"
                 },
-                {
-                    "condition": "random_chance_with_looting",
-                    "chance": 0.1,
-                    "looting_multiplier": 0.05
-                }
-            ],
-            "rolls": 1,
-            "entries": [
 				{
                     "type": "item",
-                    "name": "minecraft:ghast_tear",
+                    "name": "minecraft:gold_ore",
                     "weight": 1,
-					"functions": [
-						{
-							"function": "set_name",
-							"name": {
-								"text": "Ghast Pendant",
-								"italic": false
-							}
-						},
-						{
-							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Grants levitation while held.\"]},Enchantments:[{id:-1}]}"
-						}
-					]
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
                 }
             ]
         }

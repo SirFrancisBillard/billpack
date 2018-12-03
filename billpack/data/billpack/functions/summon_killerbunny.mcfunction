@@ -1,5 +1,5 @@
 # this code practically wrote itself
 
-execute at @s run summon rabbit ~ ~ ~ {RabbitType:99,DeathLootTable:"billpack:entities/killer_rabbit"}
+execute at @s run summon rabbit ~ ~ ~ {RabbitType:99,DeathLootTable:"billpack:entities/killer_bunny"}
 
-teleport @s ~ 0 ~
+teleport @s ~ -200 ~

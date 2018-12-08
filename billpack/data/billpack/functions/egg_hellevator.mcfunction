@@ -1,0 +1,1 @@
+give @s stray_spawn_egg{EntityTag:{id:"minecraft:pig",CustomName:"\"Instant Hellevator\"",CustomNameVisible:1,NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Attributes:[{Name:"generic.movementSpeed",Base:0f}],Silent:1,Invulnerable:1,DeathLootTable:"minecraft:empty",Tags:["instant_hellevator"]}}

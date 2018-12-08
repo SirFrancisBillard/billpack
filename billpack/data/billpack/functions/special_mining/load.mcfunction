@@ -12,6 +12,13 @@ scoreboard objectives remove ham_endstone
 scoreboard objectives remove ham_obsidian
 scoreboard objectives remove mp_minegold
 scoreboard objectives remove mp_mineiron
+scoreboard objectives remove tr_oaklog
+scoreboard objectives remove tr_sprucelog
+scoreboard objectives remove tr_birchlog
+scoreboard objectives remove tr_junglelog
+scoreboard objectives remove tr_acacialog
+scoreboard objectives remove tr_darklog
+scoreboard objectives remove vm_coal
 
 scoreboard objectives add ham_stone minecraft.mined:minecraft.stone "Hammer Pickaxe: Stone Mined"
 scoreboard objectives add ham_dirt minecraft.mined:minecraft.dirt "Hammer Pickaxe: Dirt Mined"
@@ -26,3 +33,10 @@ scoreboard objectives add ham_endstone minecraft.mined:minecraft.end_stone "Hamm
 scoreboard objectives add ham_obsidian minecraft.mined:minecraft.obsidian "Hammer Pickaxe: Obsidian Mined"
 scoreboard objectives add mp_minegold minecraft.mined:minecraft.gold_ore "Magma Pickaxe: Gold Mined"
 scoreboard objectives add mp_mineiron minecraft.mined:minecraft.iron_ore "Magma Pickaxe: Iron Mined"
+scoreboard objectives add tr_oaklog minecraft.mined:minecraft.oak_log "Treecapitator: Oak Log Mined"
+scoreboard objectives add tr_sprucelog minecraft.mined:minecraft.spruce_log "Treecapitator: Spruce Log Mined"
+scoreboard objectives add tr_birchlog minecraft.mined:minecraft.birch_log "Treecapitator: Birch Log Mined"
+scoreboard objectives add tr_junglelog minecraft.mined:minecraft.jungle_log "Treecapitator: Jungle Log Mined"
+scoreboard objectives add tr_acacialog minecraft.mined:minecraft.acacia_log "Treecapitator: Acacia Log Mined"
+scoreboard objectives add tr_darklog minecraft.mined:minecraft.dark_oak_log "Treecapitator: Dark Oak Log Mined"
+scoreboard objectives add vm_coal minecraft.mined:minecraft.coal_ore "Vein Miner: Coal Mined"

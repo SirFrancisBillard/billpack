@@ -39,12 +39,16 @@ execute as @e[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=65..,ta
 # spawn miners underground
 # zombies that spawn on stone bricks become unholy paladins
 execute as @e[type=minecraft:zombie,nbt={Dimension:0},tag=!legit_zombie] at @s if block ~ ~-1 ~ stone_bricks run function billpack:summon_paladin
-execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=0..18,tag=!legit_zombie] run function billpack:summon_doormaster
-execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=19..25,tag=!legit_zombie] run function billpack:summon_police
-execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=26..42,tag=!legit_zombie] run function billpack:summon_gopnik
-execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=43..54,tag=!legit_zombie] run function billpack:summon_miner
-execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=55..56,tag=!legit_zombie] run function billpack:summon_mommapig
-execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=57..,tag=!legit_zombie] run data merge entity @s {Tags:["legit_zombie"]}
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=30..39,tag=!legit_zombie] run function billpack:summon_greenpants
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=40..49,tag=!legit_zombie] run function billpack:summon_doormaster
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=50..62,tag=!legit_zombie] run function billpack:summon_melonhead
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=63..64,tag=!legit_zombie] run function billpack:summon_diamondhead
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=65..74,tag=!legit_zombie] run function billpack:summon_police
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=75..79,tag=!legit_zombie] run function billpack:summon_benshapiro
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=80..89,tag=!legit_zombie] run function billpack:summon_gopnik
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=90..97,tag=!legit_zombie] run function billpack:summon_miner
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=98..99,tag=!legit_zombie] run function billpack:summon_mommapig
+execute as @e[type=minecraft:zombie,nbt={Dimension:0},y_rotation=100..,tag=!legit_zombie] run data merge entity @s {Tags:["legit_zombie"]}
 
 # spawn frost queen, legendary mini-boss
 execute as @e[type=minecraft:stray,nbt={Dimension:0},y_rotation=0..26,tag=!legit_stray] run function billpack:summon_frostqueen

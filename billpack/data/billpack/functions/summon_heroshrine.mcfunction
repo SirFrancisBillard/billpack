@@ -1,3 +1,4 @@
+# memories n shit
 
 execute at @s run setblock ~ ~ ~ minecraft:mossy_cobblestone
 execute at @s run setblock ~ ~1 ~ minecraft:netherrack
@@ -19,4 +20,4 @@ execute at @s run setblock ~-1 ~ ~-1 minecraft:gold_block
 execute at @s if block ~ ~-5 ~ netherrack if block ~ ~-6 ~ netherrack run setblock ~ ~-5 ~ chest{CustomName:"\"You are a terrible person.\"",LootTable:"minecraft:chests/end_city_treasure"} replace
 
 # why not just kill it?
-teleport @s ~ -200 ~
+execute as @s[type=!player] run teleport @s ~ -200 ~

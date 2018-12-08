@@ -52,6 +52,24 @@ execute at @p[nbt={SelectedItem:{tag:{display:{Lore:["Automatically smelts mined
 # kill iron
 execute at @p[nbt={SelectedItem:{tag:{display:{Lore:["Automatically smelts mined ore."]}}}},scores={mp_mineiron=1..}] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_ore",Count:1b}},tag=!been_dropped,sort=nearest]
 
+# ==================================
+# ========== TREECAPITATOR =========
+# ==================================
+
+# oak, spruce, birch, jungle, acacia, dark
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}},scores={tr_oaklog=1..}] as @e[type=item,nbt={Item:{id:"minecraft:oak_log",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_logbreak
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}},scores={tr_sprucelog=1..}] as @e[type=item,nbt={Item:{id:"minecraft:spruce_log",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_logbreak
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}},scores={tr_birchlog=1..}] as @e[type=item,nbt={Item:{id:"minecraft:birch_log",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_logbreak
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}},scores={tr_junglelog=1..}] as @e[type=item,nbt={Item:{id:"minecraft:jungle_log",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_logbreak
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}},scores={tr_acacialog=1..}] as @e[type=item,nbt={Item:{id:"minecraft:acacia_log",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_logbreak
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}},scores={tr_darklog=1..}] as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_logbreak
+
+# ===============================
+# ========== VEIN MINER =========
+# ===============================
+
+execute as @p[nbt={SelectedItem:{id:"minecraft:golden_pickaxe",Count:1b}},scores={vm_coal=1..}] as @e[type=item,nbt={Item:{id:"minecraft:coal",Count:1b}},sort=nearest,limit=1,tag=!been_dropped] at @s run function billpack:recursive_coalvein
+
 # ============================
 # ========== GLOBALS =========
 # ============================
@@ -74,3 +92,10 @@ scoreboard players set @a ham_obsidian 0
 
 scoreboard players set @a mp_minegold 0
 scoreboard players set @a mp_mineiron 0
+
+scoreboard players set @a tr_oaklog 0
+scoreboard players set @a tr_sprucelog 0
+scoreboard players set @a tr_birchlog 0
+scoreboard players set @a tr_junglelog 0
+scoreboard players set @a tr_acacialog 0
+scoreboard players set @a tr_darklog 0

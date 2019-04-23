@@ -33,8 +33,8 @@
                 },
                 {
                     "condition": "random_chance_with_looting",
-                    "chance": 0.1,
-                    "looting_multiplier": 0.08
+                    "chance": 0.04,
+                    "looting_multiplier": 0.04
                 }
             ],
             "rolls": 1,
@@ -56,6 +56,24 @@
 							"tag": "{display:{Lore:[\"Not overpowered...\"]},Enchantments:[{id:sharpness,lvl:5},{id:knockback,lvl:2},{id:looting,lvl:3}]}"
 						}
 					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:slime_spawn_egg",
+                    "weight": 10,
+                    "functions": [
+                        {
+							"function": "set_name",
+							"name": {
+								"text": "Pet Slime",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{EntityTag:{id:\"minecraft:slime\",Size:0,PersistenceRequired:1b,Health:1,Attributes:[{Name:\"generic.maxHealth\",Base:1},{Name:\"generic.followRange\",Base:500},{Name:\"generic.attackDamage\",Base:0}],DeathLootTable:\"billpack:entities/pet_slime\"}}"
+						}
+                    ]
                 }
             ]
         }

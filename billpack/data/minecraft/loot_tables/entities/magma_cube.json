@@ -30,7 +30,7 @@
                 },
                 {
                     "condition": "random_chance_with_looting",
-                    "chance": 0.2,
+                    "chance": 0.1,
                     "looting_multiplier": 0.0
                 }
             ],
@@ -62,14 +62,21 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "Magma Infused Pickaxe",
+								"text": "Magma-Infused Pickaxe",
 								"italic": false
 							}
 						},
 						{
 							"function": "set_nbt",
 							"tag": "{display:{Lore:[\"Automatically smelts mined ore.\"]},Enchantments:[{lvl:2s,id:fire_aspect}]}"
-						}
+						},
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.3,
+                                "max": 0.8
+                            }
+                        }
 					]
                 }
             ]

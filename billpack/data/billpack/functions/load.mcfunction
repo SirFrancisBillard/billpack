@@ -1,4 +1,5 @@
 
+function billpack:alligator_attack
 function billpack:paper_bark/load
 function billpack:special_mining/load
 

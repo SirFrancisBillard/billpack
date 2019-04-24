@@ -52,8 +52,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Jump higher while held.", "color": "red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Jump higher while held.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[\"rabbit_charm\"],Enchantments:[{id:-1}]}"
 						}
 					]
                 }

@@ -8,6 +8,18 @@
                     "name": "minecraft:iron_ore",
                     "weight": 1,
                     "functions": [
+						{
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
+                        },
                         {
                             "function": "set_count",
                             "count": {
@@ -29,6 +41,18 @@
                     "name": "minecraft:gold_ore",
                     "weight": 1,
                     "functions": [
+						{
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
+                        },
                         {
                             "function": "set_count",
                             "count": {

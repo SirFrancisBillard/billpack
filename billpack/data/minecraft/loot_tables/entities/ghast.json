@@ -73,13 +73,20 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "Ghast Pendant",
+								"text": "Ghast Charm",
 								"italic": false
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Grants levitation in a radius while held.", "color": "light_purple", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Grants levitation in a radius while held.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[\"ghast_charm\"],Enchantments:[{id:-1}]}"
 						}
 					]
                 }

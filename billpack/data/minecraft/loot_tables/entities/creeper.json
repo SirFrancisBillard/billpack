@@ -30,19 +30,7 @@
               }
             }
           ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:written_book",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{pages:[\"{\\\"text\\\":\\\"Sup fag! You can make music discs by putting 4 coal blocks around random shit and it might make a dics or some shit. Yikes!\\\"}\"],title:\"Music Discs and You\",author:Jeremy,display:{Lore:[\"How to get music discs or some shit\"]}}"
-            }
-          ]
-        }
-      ]
+        }      ]
     }
   ]
 }

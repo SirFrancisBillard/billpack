@@ -33,42 +33,28 @@
             ],
             "rolls": 1,
             "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:magma_cream",
-                    "weight": 10,
-					"functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 4
-                            }
-                        },
-                        {
-                            "function": "looting_enchant",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
-                },
 				{
 					"type": "item",
-					"name": "minecraft:gold_nugget",
+					"name": "minecraft:magma_cream",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
-								"text": "Blaze Pendant",
+								"text": "Blaze Charm",
 								"italic": false
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Grants immunity to fire while held.", "color": "red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Grants immunity to fire while held.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[\"blaze_charm\"],Enchantments:[{id:-1}]}"
 						}
 					]
 				}

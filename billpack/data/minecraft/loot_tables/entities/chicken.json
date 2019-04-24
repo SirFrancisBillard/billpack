@@ -73,7 +73,7 @@
 				{
                     "type": "item",
                     "name": "minecraft:feather",
-                    "weight": 1,
+                    "weight": 10,
 					"functions": [
 						{
 							"function": "set_name",
@@ -83,8 +83,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Fall slowly while held.", "color": "white", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Fall slowly while held.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[\"feather_charm\"],Enchantments:[{id:-1}]}"
 						}
 					]
                 }

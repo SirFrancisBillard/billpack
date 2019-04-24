@@ -93,13 +93,20 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "Wither Skeleton Pendant",
+								"text": "Wither Charm",
 								"italic": false
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Grants immunity to sould sand while held.", "color": "dark_red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Grants immunity to soul sand while held.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[\"wither_charm\"],Enchantments:[{id:-1}]}"
 						}
 					]
                 }

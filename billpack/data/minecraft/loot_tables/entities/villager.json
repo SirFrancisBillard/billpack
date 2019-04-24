@@ -22,10 +22,13 @@
 				"italic": false
 			  }
 			},
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Lore:[\"You are a terrible person.\"]}}"
-            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"text":"You are a terrible person.","color":"red"},
+			  ],
+			  "replace": "true"
+			},
             {
               "function": "furnace_smelt",
               "conditions": [

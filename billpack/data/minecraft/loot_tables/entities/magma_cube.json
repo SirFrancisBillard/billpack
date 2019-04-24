@@ -49,8 +49,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Like a gooey glove, but hotter.", "color": "gold", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Like a Gooey Glove, but hotter.\"]},Enchantments:[{id:sharpness,lvl:5},{id:fire_aspect,lvl:2},{id:looting,lvl:3}]}"
+							"tag": "{Enchantments:[{id:sharpness,lvl:5},{id:fire_aspect,lvl:2},{id:looting,lvl:3}]}"
 						}
 					]
                 },
@@ -67,8 +74,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Automatically smelts mined ore.", "color": "light_purple", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Automatically smelts mined ore.\"]},Enchantments:[{lvl:2s,id:fire_aspect}]}"
+							"tag": "{Tags:[\"magma_pickaxe\"],Enchantments:[{lvl:2s,id:fire_aspect}]}"
 						},
                         {
                             "function": "set_damage",

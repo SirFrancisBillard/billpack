@@ -60,6 +60,13 @@
 				  "weight": 10,
 				  "functions": [
 					{
+					  "function": "minecraft:set_lore",
+					  "lore": [
+						{"text":"Signed copy!"},
+					  ],
+					  "replace": "true"
+					},
+					{
 					  "function": "set_nbt",
 					  "tag": "{pages:[\"{\\\"text\\\":\\\"First of all ChristianBoy22, I've been an atheist since birth.\\\"}\"],title:\"The Holy Bible\",author:God,display:{Lore:[\"A signed copy!\"]}}"
 					}
@@ -78,8 +85,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "It smells funny...", "color": "red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{color:11546150,Lore:[\"It smells funny...\"]}}"
+							"tag": "{display:{color:11546150}}"
 						}
 					]
                 },
@@ -97,7 +111,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Highlights nearby rare mobs.\"]}}"
+							"tag": "{Tags:[\"lifeform_analyzer\"]}"
 						}
 					]
                 },

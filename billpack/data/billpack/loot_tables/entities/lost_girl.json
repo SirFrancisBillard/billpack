@@ -16,8 +16,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Instantly spawns a deadly Nymph.", "color": "dark_red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Spawn a nymph on me!\"]}}"
+							"tag": "{Tags:[\"summon_nymph\"]}"
 						}
                     ]
                 }

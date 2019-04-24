@@ -82,8 +82,15 @@
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "When held, you will not go hungry.", "color": "green", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"When held, you will not go hungry.\"]},Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[\"dryad_charm\"],Enchantments:[{id:-1}]}"
 						}
 					]
 				}

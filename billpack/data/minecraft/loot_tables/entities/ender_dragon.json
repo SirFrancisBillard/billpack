@@ -12,12 +12,21 @@
 							"function": "set_name",
 							"name": {
 								"text": "Excavator",
+								"color": "gold",
+								"bold": true,
 								"italic": false
 							}
 						},
 						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Mines a 3x3x3 area.", "color": "red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
 							"function": "set_nbt",
-							"tag": "{display:{Lore:[\"Mines a 3x3x3 area.\"]}}"
+							"tag": "{Tags:[\"hammer_3x3\"],Enchantments:[{id:\"mending\",lvl:1}]}"
 						}
 					]
                 }

@@ -1,5 +1,6 @@
 
 execute as @s[nbt={SelectedItem:{tag:{Tags:["lifeform_analyzer"]}}}] run function billpack:highlight_mobs
+execute at @s[nbt={SelectedItem:{tag:{Tags:["wire_tool"]}}}] if block ~ ~-0.5 ~ purple_stained_glass run function billpack:wire/turnon
 
 execute as @s[nbt={SelectedItem:{tag:{Tags:["blaze_charm"]}}}] run effect give @s minecraft:fire_resistance 1 0 true
 execute as @s[nbt={SelectedItem:{tag:{Tags:["dryad_charm"]}}}] run effect give @s minecraft:saturation 1 0 true

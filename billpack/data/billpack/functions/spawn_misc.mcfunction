@@ -18,6 +18,13 @@ execute at @s[type=item,nbt={Item:{tag:{Tags:["summon_nymph"]}}}] run function b
 execute at @s[type=item,nbt={Item:{id:"minecraft:totem_of_undying"}}] if block ~ ~-0.2 ~ lava run function billpack:summons/summon_cultists
 execute at @s[type=item,nbt={Item:{id:"minecraft:totem_of_undying"}}] if block ~ ~-0.2 ~ lava run kill @s
 
+# =====================================
+# ========== STRONGHOLD MOBS ==========
+# =====================================
+
+execute as @s[type=minecraft:zombie,nbt={Dimension:0},tag=!legit_zombie] at @s if block ~ ~-1 ~ stone_bricks run function billpack:summons/summon_paladin
+execute as @s[type=minecraft:skeleton,nbt={Dimension:0},tag=!legit_skeleton] at @s if block ~ ~-1 ~ stone_bricks run function billpack:summons/summon_strongholdsniper
+
 # =================================
 # ========== NETHER MOBS ==========
 # =================================
@@ -33,7 +40,6 @@ execute as @s[type=minecraft:zombie_pigman,nbt={Dimension:-1},y_rotation=65..,ta
 # ========== OVERWORLD MOBS ==========
 # ====================================
 
-execute as @s[type=minecraft:zombie,nbt={Dimension:0},tag=!legit_zombie] at @s if block ~ ~-1 ~ stone_bricks run function billpack:summons/summon_paladin
 execute as @s[type=minecraft:zombie,nbt={Dimension:0},y_rotation=160..180,tag=!legit_zombie] run function billpack:spawn_blockspecific
 execute as @s[type=minecraft:zombie,nbt={Dimension:0},y_rotation=30..39,tag=!legit_zombie] run function billpack:summons/summon_greenpants
 execute as @s[type=minecraft:zombie,nbt={Dimension:0},y_rotation=50..62,tag=!legit_zombie] run function billpack:summons/summon_melonhead

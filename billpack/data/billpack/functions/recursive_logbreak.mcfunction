@@ -1,6 +1,4 @@
 
-# say Treecap started...
-
 setblock ~ ~ ~ minecraft:air destroy
 
 # recursively run this same thing on adjacent blocks
@@ -19,5 +17,3 @@ execute if block ~1 ~ ~1 #minecraft:logs positioned ~1 ~ ~1 run function billpac
 execute if block ~1 ~ ~-1 #minecraft:logs positioned ~1 ~ ~-1 run function billpack:recursive_logbreak
 execute if block ~-1 ~ ~1 #minecraft:logs positioned ~-1 ~ ~1 run function billpack:recursive_logbreak
 execute if block ~-1 ~ ~-1 #minecraft:logs positioned ~-1 ~ ~-1 run function billpack:recursive_logbreak
-
-# say Treecap finished!

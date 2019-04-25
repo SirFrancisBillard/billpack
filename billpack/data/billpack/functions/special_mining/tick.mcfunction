@@ -46,4 +46,4 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:golden_pickaxe",Count:1b}},scores
 # ============================
 
 execute as @e[type=item,tag=!been_dropped] run data merge entity @s {Tags:["been_dropped"]}
-execute as @s run function billpack:special_mining/resetvars
+execute as @s[type=player] run function billpack:special_mining/resetvars

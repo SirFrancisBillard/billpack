@@ -1,45 +1,45 @@
 {
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:magma_cream",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "looting_enchant",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
+	"pools": [
 		{
-            "conditions": [
-                {
-                    "condition": "killed_by_player"
-                },
-                {
-                    "condition": "random_chance_with_looting",
-                    "chance": 0.1,
-                    "looting_multiplier": 0.0
-                }
-            ],
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:orange_dye",
-                    "weight": 10,
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:magma_cream",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "killed_by_player"
+				},
+				{
+					"condition": "random_chance_with_looting",
+					"chance": 0.1,
+					"looting_multiplier": 0.0
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:orange_dye",
+					"weight": 10,
 					"functions": [
 						{
 							"function": "set_name",
@@ -60,11 +60,11 @@
 							"tag": "{Enchantments:[{id:sharpness,lvl:5},{id:fire_aspect,lvl:2},{id:looting,lvl:3}]}"
 						}
 					]
-                },
+				},
 				{
-                    "type": "item",
-                    "name": "minecraft:iron_pickaxe",
-                    "weight": 10,
+					"type": "item",
+					"name": "minecraft:iron_pickaxe",
+					"weight": 10,
 					"functions": [
 						{
 							"function": "set_name",
@@ -84,16 +84,16 @@
 							"function": "set_nbt",
 							"tag": "{Tags:[\"magma_pickaxe\"],Enchantments:[{lvl:2s,id:fire_aspect}]}"
 						},
-                        {
-                            "function": "set_damage",
-                            "damage": {
-                                "min": 0.3,
-                                "max": 0.8
-                            }
-                        }
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0.3,
+								"max": 0.8
+							}
+						}
 					]
-                }
-            ]
-        }
-    ]
+				}
+			]
+		}
+	]
 }

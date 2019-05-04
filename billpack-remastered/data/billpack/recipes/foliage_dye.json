@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:fern"
+        },
+        {
+            "item": "minecraft:fern"
+        },
+        {
+            "item": "minecraft:grass"
+        },
+        {
+            "item": "minecraft:grass"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_dye",
+        "count": 2
+    }
+}

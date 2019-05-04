@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5.0,
+                "max": 15.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Rice",
+				"italic": false
+              }
+            },
+			{
+              "function": "minecraft:set_lore",
+              "lore": [{
+                "text": "Great for sushi!",
+				"color": "gray",
+				"italic": false
+              }]
+            }
+          ],
+          "name": "minecraft:white_dye"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:orange_dye",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Honey",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:yellow_dye",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Wax",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sugar",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Sweet Honey",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:string",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Stringy Comb",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:slime_ball",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Sticky Comb",
+								"italic": false
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.03
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+				{
+					"type": "item",
+					"name": "minecraft:milk_bucket",
+					"weight": 32,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Bee Cream",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Used to incubate Bee Larva.",
+									"color": "gray",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[bee_cream]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:glowstone_dust",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Bee Larva",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Gene: Gold Production",
+									"color": "yellow",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[bee_larva,larva_gold],Enchantments:[{id:-1}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:glowstone_dust",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Bee Larva",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Gene: Wheat Production",
+									"color": "gold",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[bee_larva,larva_wheat],Enchantments:[{id:-1}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:glowstone_dust",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Bee Larva",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Gene: Cocoa Production",
+									"color": "gold",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[bee_larva,larva_cocoa],Enchantments:[{id:-1}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:glowstone_dust",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Bee Larva",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Gene: Emerald Production",
+									"color": "green",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[bee_larva,larva_emerald],Enchantments:[{id:-1}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:glowstone_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Bee Larva",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Gene: Diamond Production",
+									"color": "aqua",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[bee_larva,larva_diamond],Enchantments:[{id:-1}]}"
+						}
+					]
+				}
+            ]
+        }
+	]
+}

@@ -1,0 +1,36 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond_pickaxe",
+                    "weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Excavator",
+								"color": "gold",
+								"bold": true,
+								"italic": false
+							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{"text": "Mines a 3x3x3 area.", "color": "red", "italic": false}
+							],
+							"replace": "true"
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{Tags:[\"hammer_3x3\"],Enchantments:[{id:-1}]}"
+						}
+					]
+                }
+            ]
+        }
+    ]
+}

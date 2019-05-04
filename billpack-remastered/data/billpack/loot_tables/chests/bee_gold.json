@@ -1,0 +1,20 @@
+{
+	"pools": [
+		{
+			"conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.7
+                }
+            ],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_nugget",
+					"weight": 10
+				}
+			]
+		}
+	]
+}

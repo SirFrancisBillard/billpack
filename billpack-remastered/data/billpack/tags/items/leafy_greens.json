@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:tall_grass",
+    "minecraft:grass",
+    "minecraft:kelp",
+    "minecraft:sugar_cane",
+    "minecraft:fern",
+    "minecraft:lily_pad",
+    "minecraft:vine",
+    "#minecraft:leaves"
+  ]
+}

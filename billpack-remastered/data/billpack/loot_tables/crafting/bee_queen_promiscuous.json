@@ -1,0 +1,51 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:ghast_tear",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Promiscuous Queen",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Used to make an Alveary.",
+									"color": "gray",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[promiscuous_queen],Enchantments:[{id:-1}]}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:bucket",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 8
+						}
+					]
+				}
+			]
+		}
+	]
+}

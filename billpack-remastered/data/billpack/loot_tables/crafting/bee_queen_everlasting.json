@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:iron_nugget",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Everlasting Queen",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Genetically modified Bee Queen that never dies.",
+									"color": "gray",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Tags:[everlasting_queen],Enchantments:[{id:-1}]}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

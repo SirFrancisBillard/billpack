@@ -4,14 +4,14 @@
 			"conditions": [
                 {
                     "condition": "random_chance",
-                    "chance": 0.7
+                    "chance": 0.6
                 }
             ],
 			"rolls": 1,
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:gold_ingot",
+					"name": "minecraft:potato",
 					"weight": 10
 				}
 			]

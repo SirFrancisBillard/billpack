@@ -1,0 +1,43 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:dragon_breath",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Beeagra",
+								"color": "yellow",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Used to breed Princess and Prince.",
+									"color": "gold",
+									"italic": false
+								},
+								{
+									"text": "For those with Bee-rectile Dysfunction!",
+									"color": "dark_gray",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_pills:1b,Enchantments:[{id:-1}]}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

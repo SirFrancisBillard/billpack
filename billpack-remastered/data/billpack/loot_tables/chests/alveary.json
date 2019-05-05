@@ -1,0 +1,169 @@
+{
+	"pools": [
+		{
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.16
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Crappy Princess",
+								"color": "gray",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_princess:1b,princess_quality:0b,display:{color:11908533}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 12,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Good Princess",
+								"color": "yellow",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_princess:1b,princess_quality:1b,Enchantments:[{id:-1}],display:{color:16774400}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Epic Princess",
+								"color": "gold",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_princess:1b,princess_quality:2b,Enchantments:[{id:-1}],display:{color:16742912}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Legendary Princess",
+								"color": "light_purple",
+								"bold": true,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_princess:1b,princess_quality:3b,Enchantments:[{id:-1}],display:{color:15401215}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Normie Prince",
+								"color": "gray",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_prince:1b,prince_quality:0b,display:{color:11908533}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 12,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Blue-Pilled Prince",
+								"color": "blue",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_prince:1b,prince_quality:1b,Enchantments:[{id:-1}],display:{color:2359551}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Red-Pilled Prince",
+								"color": "red",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_prince:1b,prince_quality:2b,Enchantments:[{id:-1}],display:{color:16711680}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_horse_armor",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Based Prince",
+								"color": "aqua",
+								"bold": true,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{bee_royalty:1b,bee_prince:1b,prince_quality:3b,Enchantments:[{id:-1}],display:{color:65504}}"
+						}
+					]
+				}
+            ]
+        }
+	]
+}

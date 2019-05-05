@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:white_dye"
+        },
+        {
+            "item": "minecraft:cooked_kelp"
+        },
+        {
+            "item": "minecraft:porkchop"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cooked_porkchop"
+    }
+}

@@ -53,7 +53,7 @@ execute as @s[tag=craft_hotchoc] run give @s minecraft:potion{CustomPotionEffect
 
 tag @s remove possible_crafter
 tag @s remove craft_help
-tag @s remove craft_crooks
+tag @s remove craft_crook
 tag @s remove craft_drill
 #tag @s remove craft_fleshstew
 #tag @s remove craft_icecream

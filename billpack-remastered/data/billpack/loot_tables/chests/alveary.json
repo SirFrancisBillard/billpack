@@ -4,7 +4,7 @@
             "conditions": [
                 {
                     "condition": "random_chance",
-                    "chance": 0.16
+                    "chance": 0.2
                 }
             ],
             "rolls": 1,

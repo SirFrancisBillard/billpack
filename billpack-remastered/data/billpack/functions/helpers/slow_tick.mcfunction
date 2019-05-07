@@ -18,4 +18,4 @@ execute as @e[type=item_frame,nbt={Item:{tag:{Tags:[bee_cream]}}}] at @s if bloc
 
 execute at @e[type=item_frame,nbt={Item:{tag:{Tags:[withered_larva]}}}] positioned ~ ~-1 ~ if block ~ ~ ~ dropper run function billpack:helpers/bee_crafting
 
-schedule function billpack:helpers/slow_tick 10s
+schedule function billpack:helpers/slow_tick 80s

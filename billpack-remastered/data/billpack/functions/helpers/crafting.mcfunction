@@ -1,5 +1,6 @@
 
 tag @s[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] add possible_crafter
+tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count:1b}]}] add craft_beebook
 tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count:2b}]}] add craft_help
 tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count:3b}]}] add craft_crook
 tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count:4b}]}] add craft_drill
@@ -17,6 +18,7 @@ tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count
 tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count:16b}]}] add craft_hotchoc
 #tag @s[tag=possible_crafter,nbt={Inventory:[{id:"minecraft:knowledge_book",Count:17b}]}] add craft_musubi
 
+execute as @s[tag=craft_beebook] run clear @s minecraft:knowledge_book 1
 execute as @s[tag=craft_help] run clear @s minecraft:knowledge_book 2
 execute as @s[tag=craft_crook] run clear @s minecraft:knowledge_book 3
 execute as @s[tag=craft_drill] run clear @s minecraft:knowledge_book 4
@@ -34,6 +36,7 @@ execute as @s[tag=craft_coffee] run clear @s minecraft:knowledge_book 15
 execute as @s[tag=craft_hotchoc] run clear @s minecraft:knowledge_book 16
 #execute as @s[tag=craft_musubi] run clear @s minecraft:knowledge_book 17
 
+execute as @s[tag=craft_beebook] run function billpack:helpers/bee_book
 execute as @s[tag=craft_help] run give @s written_book{pages:["{\"text\":\"Billpack Mod Guide\\n\\nBy Bill\"}","{\"text\":\"Crafting recipes\\n\\n4 logs in shape of hoe:\\nCrook\"}","{\"text\":\"Magic\\n\\nBuild an altar by putting four flowers around an obsidian block in the ground.\"}","{\"text\":\"There's infinitely more stuff to find out on your own, I'm a lazy fucker lmao.\"}"],title:"Billpack Mod Guide",author:Bill,generation:0,display:{Lore:[{"text":"All you need to know!"}]}}
 execute as @s[tag=craft_crook] run give @s minecraft:wooden_hoe{display:{Name:"{\"text\":\"Crook\",\"color\":\"green\",\"italic\":\"false\"}",Lore:["{\"text\":\"Higher sapling drop rate\",\"italic\":false,\"bold\":true}"]},Enchantments:[{id:"minecraft:fortune",lvl:10}]}
 execute as @s[tag=craft_drill] run give @s minecraft:wooden_pickaxe{display:{Name:"{\"text\":\"Drill\",\"color\":\"red\",\"italic\":\"false\"}",Lore:["Higher sapling drop rate"]},Enchantments:[{id:"minecraft:efficiency",lvl:10}]}
@@ -52,6 +55,7 @@ execute as @s[tag=craft_hotchoc] run give @s minecraft:potion{CustomPotionEffect
 #execute as @s[tag=craft_musubi] run give @s minecraft:cooked_porkchop{display:{Name:"{\"text\":\"Spam Musubi\",\"color\":\"gold\",\"bold\":\"true\",\"italic\":\"false\"}"}}
 
 tag @s remove possible_crafter
+tag @s remove craft_beebook
 tag @s remove craft_help
 tag @s remove craft_crook
 tag @s remove craft_drill

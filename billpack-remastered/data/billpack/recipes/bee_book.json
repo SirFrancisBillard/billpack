@@ -2,11 +2,10 @@
     "type": "crafting_shapeless",
     "ingredients": [
         {
-            "item": "minecraft:cobblestone"
+            "item": "minecraft:dirt"
         }
     ],
     "result": {
-        "item": "minecraft:knowledge_book",
-        "count": 2
+        "item": "minecraft:knowledge_book"
     }
 }

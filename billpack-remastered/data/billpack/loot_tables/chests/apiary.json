@@ -128,15 +128,15 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "Gene: Gold Production",
-									"color": "yellow",
+									"text": "Gene: Cocoa Production",
+									"color": "gold",
 									"italic": false
 								}
 							]
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Tags:[bee_larva,larva_gold],Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[bee_larva,larva_cocoa],Enchantments:[{id:-1}]}"
 						}
 					]
 				},
@@ -184,7 +184,7 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "Gene: Cocoa Production",
+									"text": "Gene: Carrot Production",
 									"color": "gold",
 									"italic": false
 								}
@@ -192,7 +192,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Tags:[bee_larva,larva_cocoa],Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[bee_larva,larva_carrot],Enchantments:[{id:-1}]}"
 						}
 					]
 				},
@@ -212,15 +212,15 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "Gene: Emerald Production",
-									"color": "green",
+									"text": "Gene: Iron Production",
+									"color": "gray",
 									"italic": false
 								}
 							]
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Tags:[bee_larva,larva_emerald],Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[bee_larva,larva_iron],Enchantments:[{id:-1}]}"
 						}
 					]
 				},
@@ -240,15 +240,15 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "Gene: Diamond Production",
-									"color": "aqua",
+									"text": "Gene: Gold Production",
+									"color": "yellow",
 									"italic": false
 								}
 							]
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Tags:[bee_larva,larva_diamond],Enchantments:[{id:-1}]}"
+							"tag": "{Tags:[bee_larva,larva_gold],Enchantments:[{id:-1}]}"
 						}
 					]
 				}

@@ -1,0 +1,2 @@
+
+execute at @s run setblock ~ ~-1 ~ spawner{SpawnCount:1,MaxNearbyEntities:1,SpawnRange:4,Delay:20,MinSpawnDelay:60,MaxSpawnDelay:120,RequiredPlayerRange:10,SpawnData:{id:"minecraft:phantom",CustomName:"\"Aether Dragon\"",CustomNameVisible:0,PersistenceRequired:1b,Size:15,Health:60,Attributes:[{Name:"generic.maxHealth",Base:60}],DeathLootTable:"aether:entities/aether_dragon",ActiveEffects:[{Id:12,Amplifier:0,Duration:2147483647}],Tags:["aether_mob"]}}

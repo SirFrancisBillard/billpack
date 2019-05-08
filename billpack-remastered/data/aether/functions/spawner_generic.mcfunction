@@ -1,0 +1,2 @@
+
+execute at @s run setblock ~ ~-1 ~ spawner{SpawnCount:1,MaxNearbyEntities:6,SpawnRange:4,Delay:20,MinSpawnDelay:60,MaxSpawnDelay:120,RequiredPlayerRange:6,SpawnData:{id:"minecraft:stray",CustomName:"\"Aether Defender\"",CustomNameVisible:0,DeathLootTable:"aether:entities/defender",HandItems:[{id:"minecraft:iron_sword",Count:1},{}],ArmorItems:[{},{},{},{id:"minecraft:player_head",tag:{SkullOwner:MHF_Squid},Count:1}],Tags:["aether_mob"]}}

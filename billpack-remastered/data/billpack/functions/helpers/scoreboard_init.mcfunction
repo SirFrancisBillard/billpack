@@ -20,6 +20,8 @@ scoreboard objectives remove tr_acacialog
 scoreboard objectives remove tr_darklog
 scoreboard objectives remove vm_coal
 scoreboard objectives remove single_sleep
+scoreboard objectives remove drank_badluck
+scoreboard objectives remove eaten_steak
 
 scoreboard objectives add ham_stone minecraft.mined:minecraft.stone "Hammer Pickaxe: Stone Mined"
 scoreboard objectives add ham_dirt minecraft.mined:minecraft.dirt "Hammer Pickaxe: Dirt Mined"
@@ -42,3 +44,8 @@ scoreboard objectives add tr_acacialog minecraft.mined:minecraft.acacia_log "Tre
 scoreboard objectives add tr_darklog minecraft.mined:minecraft.dark_oak_log "Treecapitator: Dark Oak Log Mined"
 scoreboard objectives add vm_coal minecraft.mined:minecraft.coal_ore "Vein Miner: Coal Mined"
 scoreboard objectives add single_sleep minecraft.custom:minecraft.sleep_in_bed "Single Sleep: Slept in Bed"
+scoreboard objectives add drank_badluck dummy "estrogen drink"
+scoreboard objectives add eaten_steak minecraft.used:minecraft.cooked_beef "Revert Trap: Eaten Steak"
+
+# save this one xd
+scoreboard objectives add tranny dummy "are you a trap yet?"

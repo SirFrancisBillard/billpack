@@ -5,5 +5,7 @@ execute as @s[type=cat] run data merge entity @s {Invulnerable:1b}
 
 execute at @s[type=item_frame,nbt={Item:{id:"minecraft:nether_star"}}] run data merge block ~ ~-1 ~ {BurnTime:160}
 
-#execute at @s[type=chicken,tag=apiary] unless block ~ ~ ~ barrel run setblock ~ ~ ~ barrel
-#execute at @s[type=chicken,tag=apiary] if block ~ ~ ~ barrel run data merge block ~ ~ ~
+# harvestable skulls
+execute as @s[type=item,nbt={Item:{tag:{SkullOwner:{Name:"MHF_Slime"}}}}] run data modify entity @s Item set value {id:"minecraft:slime_ball",Count:1b}
+execute as @s[type=item,nbt={Item:{tag:{SkullOwner:{Name:"MHF_Cake"}}}}] run data modify entity @s Item set value {id:"minecraft:cake",Count:1b}
+execute as @s[type=item,nbt={Item:{tag:{SkullOwner:{Name:"MHF_Melon"}}}}] run data modify entity @s Item set value {id:"minecraft:melon_slice",Count:1b}

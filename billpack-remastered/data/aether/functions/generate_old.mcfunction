@@ -2,8 +2,14 @@
 # safety precaution
 effect give @s levitation 10 255
 
-execute positioned ~ 233 ~ run function aether:platform
-function aether:teleport
+teleport @s 696969 233 696969
+
+execute at @s run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 glowstone
+execute at @s run fill ~1 ~-2 ~1 ~-1 ~-2 ~-1 bedrock
+execute at @s run fill ~ ~ ~ ~ ~1 ~ air
+
+# safety precaution
+teleport @s 696969 233 696969
 
 summon armor_stand ~ ~ ~ {Tags:[aether_spread,aether_tree],NoGravity:1}
 summon armor_stand ~ ~ ~ {Tags:[aether_spread,aether_tree],NoGravity:1}
@@ -32,8 +38,6 @@ execute at @e[type=armor_stand,tag=aether_spread] run setblock ~ ~-2 ~ air
 
 execute as @e[type=armor_stand,tag=aether_spread] run kill @s
 
-# securit measure
-execute positioned ~ 233 ~ run function aether:platform
-function aether:teleport
+execute at @s run fill ~ ~ ~ ~ ~1 ~ air
 
 effect clear @s levitation

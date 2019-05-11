@@ -9,8 +9,6 @@ scoreboard players operation #beemod bee_quality += #beemod bee_temp
 
 function billpack:crafting/bee_generic
 
-tellraw @a {"score":{"name":"#beemod","objective":"bee_quality"}}
-
 data merge block ~ ~ ~ {Items:[{Slot:4b,id:"minecraft:golden_horse_armor",Count:1b,tag:{Enchantments:[{id:-1}],display:{Name:"{\"text\":\"Everlasting Larva\",\"italic\":false,\"color\":\"yellow\"}"}}}]}
 
 # so based and red pilled

@@ -22,6 +22,7 @@ scoreboard objectives remove vm_coal
 scoreboard objectives remove single_sleep
 scoreboard objectives remove drank_badluck
 scoreboard objectives remove eaten_steak
+scoreboard objectives remove thrown_snowball
 
 scoreboard objectives add ham_stone minecraft.mined:minecraft.stone "Hammer Pickaxe: Stone Mined"
 scoreboard objectives add ham_dirt minecraft.mined:minecraft.dirt "Hammer Pickaxe: Dirt Mined"
@@ -46,6 +47,7 @@ scoreboard objectives add vm_coal minecraft.mined:minecraft.coal_ore "Vein Miner
 scoreboard objectives add single_sleep minecraft.custom:minecraft.sleep_in_bed "Single Sleep: Slept in Bed"
 scoreboard objectives add drank_badluck dummy "estrogen drink"
 scoreboard objectives add eaten_steak minecraft.used:minecraft.cooked_beef "Revert Trap: Eaten Steak"
+scoreboard objectives add thrown_snowball minecraft.used:minecraft.snowball "Dynamite: Thrown Snowball"
 
 # save this one xd
 scoreboard objectives add tranny dummy "are you a trap yet?"

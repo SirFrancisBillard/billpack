@@ -6,12 +6,35 @@
 				{
 					"type": "item",
 					"name": "minecraft:feather",
-					"weight": 20
+					"weight": 16
 				},
 				{
 					"type": "item",
-					"name": "minecraft:sugar",
-					"weight": 4
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{geneva_convention:1b}"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"text": "Geneva Convention",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "Used to make Chemical Weapons.",
+									"color"L "gray",
+									"italic": false
+								}
+							]
+						}
+					]
 				}
 			]
 		}

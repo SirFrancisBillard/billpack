@@ -1,4 +1,8 @@
 
+scoreboard objectives remove x
+scoreboard objectives remove y
+scoreboard objectives remove z
+scoreboard objectives remove var
 scoreboard objectives remove ham_stone
 scoreboard objectives remove ham_dirt
 scoreboard objectives remove ham_grass
@@ -24,6 +28,10 @@ scoreboard objectives remove drank_badluck
 scoreboard objectives remove eaten_steak
 scoreboard objectives remove thrown_snowball
 
+scoreboard objectives add x dummy "x coordinate"
+scoreboard objectives add y dummy "y coordinate"
+scoreboard objectives add z dummy "z coordinate"
+scoreboard objectives add var dummy "generic variable for maths"
 scoreboard objectives add ham_stone minecraft.mined:minecraft.stone "Hammer Pickaxe: Stone Mined"
 scoreboard objectives add ham_dirt minecraft.mined:minecraft.dirt "Hammer Pickaxe: Dirt Mined"
 scoreboard objectives add ham_grass minecraft.mined:minecraft.grass "Hammer Pickaxe: Grass Mined"
